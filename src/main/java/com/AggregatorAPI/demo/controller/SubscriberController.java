@@ -25,14 +25,14 @@ public class SubscriberController {
 
     @PostMapping("/register")
     public Member registerUser(@RequestBody MemberModel memberModel) {
-        
+        System.out.println("hello");
         return subscriberService.addSubscriber(memberModel);
     }
 
-    @PostMapping("/login")
-    public String loginUser(@RequestBody String entity) {
-
-        return entity;
+    @PostMapping("/signin")
+    public String signIn(@RequestBody MemberModel memberModel) {
+        System.out.println("hehe");
+        return subscriberService.signIn(memberModel.getEmail(), memberModel.getPassword());
     }
     
 }
