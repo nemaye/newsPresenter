@@ -56,7 +56,7 @@ public class SubscriberService implements UserDetailsService{
             return "User not found";
         }
         if(passwordEncoder.matches(password, member.getPassword())){
-            return jwtConfig.generateToken();
+            return jwtConfig.generateToken(email);
         }
         return "Invalid credentials";
     }

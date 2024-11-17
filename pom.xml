@@ -80,6 +80,21 @@
 			<version>0.11.5</version>
 			<scope>runtime</scope>
 		</dependency>
+<dependencies>
+    <!-- SLF4J API (Logging Facade) -->
+    <dependency>
+        <groupId>org.slf4j</groupId>
+        <artifactId>slf4j-api</artifactId>
+        <version>2.0.0-alpha1</version> <!-- Use the latest version available -->
+    </dependency>
+    
+    <!-- SLF4J Binding for Logback (or another logging implementation) -->
+    <dependency>
+        <groupId>ch.qos.logback</groupId>
+        <artifactId>logback-classic</artifactId>
+        <version>1.2.6</version> <!-- Or the latest version -->
+    </dependency>
+</dependencies>
 
 
 	</dependencies>

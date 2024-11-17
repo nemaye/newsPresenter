@@ -4,6 +4,8 @@ package com.AggregatorAPI.demo.model;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.OneToOne;
 
 @Entity
 public class Member {
@@ -14,6 +16,10 @@ public class Member {
     private String email;
     private String password;
     private Boolean isSubscribed;
+
+    @OneToOne
+    @JoinColumn(name = "id", referencedColumnName = "userId")
+    private Preference preference;
 
     public Member() {
     }

@@ -10,6 +10,5 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface SubscriberRepository extends JpaRepository<Member, Integer> {
 
-
     Member findByEmail(String email);
 }
