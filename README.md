@@ -32,8 +32,8 @@ AggregatorAPI
 
 ### API
 
-POST /api/subscriber/register
-POST /api/subscriber/signin
-PUT /api/preference/{}
-GET /api/news/{}
+POST /api/subscriber/register  
+POST /api/subscriber/signin  
+PUT /api/preference/{}  
+GET /api/news/{}  
 
