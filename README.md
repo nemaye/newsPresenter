@@ -30,3 +30,10 @@ AggregatorAPI
         ├── NewsService.java  
         ├── PreferenceService.java  
 
+### API
+
+POST /api/subscriber/register
+POST /api/subscriber/signin
+PUT /api/preference/{}
+GET /api/news/{}
+
