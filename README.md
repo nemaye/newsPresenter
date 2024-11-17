@@ -2,8 +2,7 @@
 
 This project is a Spring Boot application that provides an API to fetch news from an external website using an API key. The `NewsController` retrieves the latest news and returns it in JSON format.
 
-###
-File Structure
+### File Structure
 
 ├── HELP.md
 ├── mvnw
